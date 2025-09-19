@@ -1,0 +1,157 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    background: linear-gradient(-45deg, #FF6B6B, #FFD93D, #6BCB77, #4D96FF);
+    background-size: 400% 400%;
+    animation: fondoAnimado 15s ease infinite;
+    min-height: 100vh;
+
+}
+
+h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  color: #ffeaea;
+  background: linear-gradient(135deg, #6D5BBA, #8D58BF);
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+h1:hover{
+    transform: scale(1.02);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #0489dc, #be0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: moverGradiente 5s ease infinite;
+  background-size: 200% 200%;
+  text-align: center;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    margin: auto 1rem;
+}
+@keyframes moverGradiente {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+}
+
+@keyframes fondoAnimado {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 2rem;
+}
+
+.imagen-perfil{
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+  object-fit:cover;
+  object-position:center  80%;
+  border: 4px solid #ffffff;
+  box-shadow: 0 6px 15px rgba(22, 6, 6, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagen-perfil:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 2px rgba(239, 43, 43, 0.3);
+}
+
+/* Opcional: agrandar imagen en pantallas grandes */
+@media (min-width: 768px) {
+  .imagen-perfil {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+.ngl-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  max-width: 400px;
+  width: 100%;
+  text-align: left;
+  transition: box-shadow 0.3s ease;
+  margin: 1rem auto;
+}
+
+.ngl-card:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.ngl-card h3 {
+  margin-top: 0;
+  font-size: 1.6rem;
+  color: #6D5BBA;
+  margin-bottom: 1rem;
+}
+
+.pregunta {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.respuesta {
+  font-size: 1.1rem;
+  color: #4D4D4D;
+  border: 2px dashed #8D58BF;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: #f9f4ff;
+    margin: 0.9rem auto;
+}
+
+footer p{
+    font-size: 1rem;
+    margin: 2rem auto;
+    text-align: center;
+}
